@@ -167,3 +167,13 @@ Text Domain: tornese
 	font-size: 14px;
 	font-family: 'Kristen ITC'
 }
+
+.search .menu a {
+	padding: 10px 20px 10px 20px;
+	width: 100%;
+	font-size: 18px;
+	font-family: Calibri;
+	border: 1px solid black;
+	display: block;
+	text-align: center;
+}

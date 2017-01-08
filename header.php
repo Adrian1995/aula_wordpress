@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/libs/bootstrap/css/bootstrap.min.css">
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/libs/jquery-3.1.1.min.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/search.js"></script>
 	<?php wp_head(); ?>
 </head>
 <body>
