@@ -1,0 +1,169 @@
+/*
+Theme Name: Torne-se um programador
+Theme URI: https://wordpress.org/themes/tornese/
+Author: Adrian Medeiros
+Author URI: https://wordpress.org/
+Description: Um novo site wordpress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tornese
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*--Cabecalho--*/
+.header{ 
+	width: 100%;
+	height: 100px; 
+	background-color: #42a3ce;
+}
+.header .logo {
+	height: 100px;
+	margin: 0 auto;
+	display: block;
+}
+
+.menu-principal .container-fluid {
+	background-color: #42a3ce;
+}
+.menu-principal .container-fluid .navbar-nav li a {
+	color: #FFFFFF;
+}
+
+
+
+
+.header .menu-principal-container {
+	position: absolute;
+	display: inline-block;
+}
+.header .menu-principal-container ul li {
+	display: inline;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.header .menu-principal-container ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Kristen ITC'
+}
+
+
+/*--Conteudo--*/
+.container{
+	padding: 20px;
+	display: table;
+	width: 100%;
+}
+/*--Listagem da home--*/
+.listagem{
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+.listagem h2 {
+	width: 95%;
+	font-family: Calibri;
+	padding-bottom: 5px;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	border-color: silver;
+}
+.listagem .post,
+.listagem .page {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid silver;
+	width: 95%;
+}
+.listagem .post img,
+.listagem .page img {
+	display: inline-block;
+	max-height: 100px;
+	max-width: 20%;
+	float: left;
+}
+.listagem .post .info,
+.listagem .page .info {
+	display: inline-block;
+	min-height: 100px;
+}
+.listagem .post a,
+.listagem .page a {
+	text-decoration: none;
+	color: black;
+}
+.listagem .post h3,
+.listagem .page h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	font-family: Calibri;
+}
+.listagem .post p,
+.listagem .page p {
+	margin-top: 5px;
+	margin-left: 10px;
+	font-family: Calibri;
+}
+
+
+
+
+
+
+
+.widget-ultimos-posts {
+	padding: 20px;
+	border: 1px solid silver;
+}
+
+.widget-ultimos-posts ul li {
+	list-style: none;
+	margin-top: 20px;
+	font-size: 18px;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: silver;
+}
+.widget-ultimos-posts ul li a {
+	color: black;
+}
+
+
+
+
+
+
+/*--Rodape--*/
+.footer{
+	width: 100%;
+	height: 100px;
+	display: table;
+	background-color: silver;
+	padding: 20px;
+}
+.footer .menu-rodape-um-container {
+	position: absolute;
+	display: inline-block;
+}
+.footer .menu-rodape-um-container ul li {
+	display: inline;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.footer .menu-rodape-um-container ul li a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Kristen ITC'
+}
