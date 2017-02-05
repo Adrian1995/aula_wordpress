@@ -4,7 +4,7 @@ require_once('custom-posts/cursos.php');
 require_once('taxonomias/cidades.php');
 require_once('widgets/ultimos-posts/ultimos-posts.php');
 require_once('widgets/facebook/facebook.php');
-
+require_once('plugins/slide-tornese/slide-tornese.php');
 
 add_theme_support( 'post-thumbnails' );
 
