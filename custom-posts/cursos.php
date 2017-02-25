@@ -4,7 +4,7 @@ function criar_custom_post_cursos(){
 	$args_cursos_post_type = array(
 		'labels' => array('name' => 'Cursos'),
 		'public' => true,
-		'supports' => array('title','editor','excerpt','thumbnail'),
+		'supports' => array('title','editor','excerpt','thumbnail','comments'),
 		'register_meta_box_cb' => 'cursos_meta_box'  );
 
 	register_post_type( 'cursos' , $args_cursos_post_type );

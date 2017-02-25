@@ -56,6 +56,14 @@ Text Domain: tornese
 }
 
 
+.bx-viewport {
+	max-height: 400px;
+}
+.bx-wrapper img {
+	min-width: 100%;
+}
+
+
 /*--Conteudo--*/
 .container{
 	padding: 20px;

@@ -16,14 +16,18 @@ get_header();
 				<p>Disponível nas seguintes cidades: 
 				<?php
 				$termsCidades = get_the_terms( get_the_ID() , 'cidades');
-				foreach ($termsCidades as $cidade) {
-					echo $cidade->name.", ";
+
+				if( is_array($termsCidades) ){
+					foreach ($termsCidades as $cidade) {
+						echo $cidade->name.", ";
+					}
 				}
 				?>
 				</p>
 				<br>
 				<p><?php echo get_the_content(); ?></p>
 				<?php
+				comments_template();
 			}
 			?>
 		</div>
