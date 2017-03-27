@@ -1,6 +1,6 @@
 jQuery(function() {
 
-	var pageSearch = 1;
+	var pageSearch = 0;
 
 	jQuery('#btnsearch').on('click', function(){
 		pageSearch++;

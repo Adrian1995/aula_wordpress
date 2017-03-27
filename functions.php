@@ -69,3 +69,30 @@ function tornese_search_page( $query, $paged ) {
 }
 add_action( 'wp_ajax_tornese_search', 'tornese_search_page' );
 add_action( 'wp_ajax_nopriv_tornese_search', 'tornese_search_page' );
+
+
+
+
+define( 'AMP_QUERY_VAR', apply_filters( 'amp_query_var', 'amp' ) );
+
+add_rewrite_endpoint( AMP_QUERY_VAR, EP_PERMALINK );
+
+add_filter( 'template_include', 'amp_page_template', 99 );
+
+function amp_page_template( $template ) {
+  if( get_query_var( AMP_QUERY_VAR, false ) !== false ) {
+    if ( is_single() ) {
+      $template = get_template_directory() .  '/amp-single.php';
+    }   
+  }
+  return $template;
+}
+
+function amp_seo() {
+  if( is_single() ){
+    ?>
+    <link rel="amphtml" href="<?php echo esc_url( get_the_permalink().'amp' ); ?>" />
+    <?php
+  }
+}
+add_action('wp_head', 'amp_seo');
